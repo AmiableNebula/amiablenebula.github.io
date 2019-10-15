@@ -7,7 +7,6 @@ var product1 = {name: "HP 4426", id: "4426", desc: "Newest and best HP laptop"};
 var product2 = {name: "Apple iPad 88123", id: "88123", desc: "Apple tablet"};
 var product3 = {name: "Dell Dimension 2400", id: "2400X", desc: "2.4GHz Dell PC"};
 
-// This doesn't work and I'm sad
 function makeProductDetails (product) {
 	var str = "<table style='width: 100%' border=1 cellpadding=10><tr>";
 	str += "<td rowspan=3 style='width: 30%; text-align: center; vertical-align: middle'>";
