@@ -5,34 +5,9 @@ var numProducts = 3;
 var product1 = {name: "Pinkerton", id: "0000", desc: "Weezer's second album", img: "Pinkerton.jpg"};
 var product2 = {name: "The Purple Heart", id: "0001", desc: "Left at London's first album", img: "The Purple Heart.jpg"};
 var product3 = {name: "Lemon Boy", id: "0002", desc: "Cavetown's third album", img: "Lemon Boy.jpg"};
-var product4 = null;
-var product5 = null;
 var cardArray;
 var openCards;
 var currentPopup = 0;
-var replyString;
-
-// Gets and sets product data from remote server (provided function)
-function getProduct (jsonObject) {
-	var server = "https://college1.com/getproduct.php";
-	var jsonString = JSON.stringify (jsonObject);
-	var request = new XMLHttpRequest();
-	request.open ("GET", server + "?jsonString=" + jsonString, true);
-	request.send();
-
-	request.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			replyString =  this.responseText;
-			if (product4 == null) {
-				product4 = JSON.parse (replyString);
-			} else if (product5 == null) {
-				product5 = JSON.parse (replyString);
-			} else {
-				console.log ("Error, no object available");
-			}
-		}
-	};
-}
 
 // Checks that all of the input form's fields are filled
 function checkInputForm() {
