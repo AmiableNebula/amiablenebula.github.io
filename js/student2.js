@@ -58,6 +58,7 @@ function checkInputForm() {
 
 	if (str != "") {
 		alert (str);
+		return false;
 	}
 }
 
