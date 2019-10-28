@@ -15,24 +15,41 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/skeleton.css">
 
+		<!-- Add custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 		<!-- Add favicon -->
 		<link rel="icon" type="image/ico" href="images/Flow.jpg">
 	</head>
 	<body>
-		<!-- "Container" is Skeleton's main wrapper -->
+		<!-- Custom navigation bar format -->
+		<ul class="navbar">
+			<!-- List of on-site links -->
+			<li style="float: left">
+				<!-- Custom navigation bar item format -->
+				<div class="navbar-item"></div>
+			</li>
+
+			<!-- List of off-site links -->
+			<li style="float: right">
+				<div class="navbar-item"></div>
+			</li>
+		</ul>
+		<!-- Containers wrap related elements together -->
 		<div class="container">
 			<!-- Columns should be immediate children of a row -->
 			<div class="row">
 				<!-- Shorthand for a column with a width of 50% -->
-				<div class="one-half column" style="margin-top: 20%">
+				<div class="one-half column" style="margin-top: 16%">
 					<h4>Sarah's site</h4>
 					<p>Hello yes! This is the website I'll be experimenting with web development on~</p>
 
 					<!-- Primary buttons are colored -->
 					<p><a class="button button-primary">Dummy button</a>
 				</div>
-				<div class="one-half column" style="margin-top: 10%">
-					<img src="images/Flow.jpg" alt="Flow.jpg">
+				<div class="one-half column" style="margin-top: 6%">
+					<!-- This image will not overflow its container -->
+					<img class="u-max-full-width" src="images/Flow.jpg" alt="Flow.jpg">
 				</div>
 			</div>
 		</div>
