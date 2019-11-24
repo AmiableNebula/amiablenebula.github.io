@@ -1,5 +1,5 @@
 // Returns the factorial of a given natural number
-function factorial (var n) {
+function factorial (n) {
 	if (n == 0 || n == 1) {
 		return 1;
 	} else {
@@ -8,7 +8,7 @@ function factorial (var n) {
 }
 
 // Returns the number of unique permutations of characters from a string
-function permutations (var str) {
+function permutations (str) {
 	// Store the denominator and the length of the original string
 	var denominator = 1;
 	var length = str.length;
@@ -16,7 +16,7 @@ function permutations (var str) {
 	// Iterate through the string
 	for (var i = 0; i < str.length; i++) {
 		// Store and remove the current character
-		var current = str.chatAt (i);
+		var current = str [i];
 		str = str.substring (0, i) + str.substring (i + 1, str.length);
 		i--;
 
@@ -26,7 +26,7 @@ function permutations (var str) {
 		// Reiterate through the string
 		for (var j = 0; j < str.length; j++) {
 			// Check for duplicate characters
-			if (str.chatAt (j) == current) {
+			if (str [j] == current) {
 				// Increment the counter
 				count++;
 
