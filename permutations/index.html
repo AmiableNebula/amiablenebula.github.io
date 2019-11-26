@@ -38,13 +38,15 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="column" style="text-align: center; margin-top: 14%">
-					<p>Enter a string into the input field and click "Submit" to see how many unique
-					permutations of characters are possible from it</p>
+				<div class="column" style="text-align: center; margin-top: 10%">
+					<p>Enter a string into the input field and click "Submit" to see every unique permutation
+						of characters that is possible from it (be aware that execution time increases dramatically
+						the longer the string is)</p>
 					<input id="input" type="text" placeholder="Enter string here">
 					<br>
-					<a class="button button-primary" onClick="document.getElementById ('answer').innerHTML ='<p><b>' +
-						permutations (document.getElementById ('input').value) + ' </b>unique permutation(s)</p>'">Submit</a>
+					<a class="button button-primary" onClick="document.getElementById ('answer').innerHTML ='<p>' +
+						format (permutations (document.getElementById ('input').value)) + '</p>'">Submit</a>
+					<p></p>
 					<div id="answer"></div>
 				</div>
 			</div>
