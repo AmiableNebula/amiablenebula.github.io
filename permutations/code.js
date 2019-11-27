@@ -45,13 +45,10 @@ function permutations (str) {
 		// Store the permutations of the string without the current character
 		var remaining = permutations (str.substring (0, i) + str.substring (i + 1, str.length));
 
-		// Store the current character
-		var current = str [i];
-
 		// Iterate through the remaining permutations
 		for (var j = 0; j < remaining.length; j++) {
 			// Add the current character plus the remaining permutations to the array
-			array.push (current + remaining [j]);
+			array.push (str [i] + remaining [j]);
 		}
 	}
 
